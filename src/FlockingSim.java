@@ -13,16 +13,17 @@ public class FlockingSim extends PApplet {
 	}
 
 //regular settings
-	private int birdsTotal = 500;
-	private float vision = 50f;
-	private float mouseSeparation = 0.2f;
-	private float mouseSeparationDist = 50f;
-	private float separationDist = 15f;
-	private float speed = 3f;
-	private int margin = 100;
-	private float alignment = 0.1f;
-	private float cohesion = 0.005f;
-	private float separation = 0.01f;
+	private int birdsTotal = 500; //Total birds
+	private float vision = 50f; //Minimum distance between birds for one to affect the other.
+	private float mouseSeparation = 0.2f; //How quickly birds move away from the mouse.
+	private float mouseSeparationDist = 50f; //Circle of influence for the mouse.
+	private float separationDist = 15f; //Distance to maintain between birds
+	private float speed = 3f; //Speed maintained
+	private float alignment = 0.1f; //How quickly birds will try to align themselves.
+	private float cohesion = 0.005f; //How quickly birds will try to move toward each other
+	private float separation = 0.01f; //How quickly birds avoid collisions
+	private int margin = 100; //Margin for the side of the screen.
+
 //internal settings
 	private Bird[] birds = new Bird[birdsTotal];
 	private int gridSize = 20;
