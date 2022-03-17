@@ -11,7 +11,6 @@ public class FlockingSim extends PApplet {
 		FlockingSim sketch = new FlockingSim();
 		PApplet.runSketch(processingArgs, sketch);
 	}
-
 //regular settings
 	private int birdsTotal = 500; //Total birds
 	private float vision = 50f; //Minimum distance between birds for one to affect the other.
